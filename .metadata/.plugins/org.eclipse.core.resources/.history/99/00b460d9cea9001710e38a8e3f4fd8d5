@@ -1,0 +1,48 @@
+package be.pxl.h4.oef4;
+
+import java.util.Scanner;
+
+//author: Pieter Maltezos
+public class H4Oef4 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int kostenOuderdom = 0;
+		int kostenRating = 0;
+		int basisPrijs = 5;
+
+		System.out.println("Hoeveel jaar oud is de film?");
+		int ouderdomFilm = input.nextInt();
+		System.out.println("Welke rating heeft de film? (1-5 sterren)");
+		int ratingFilm = input.nextInt();
+
+		switch (ouderdomFilm) {
+		case 1:
+		case 2:
+			kostenOuderdom = basisPrijs + 1;
+			break;
+		default:
+			kostenOuderdom = basisPrijs;
+			break;
+		}
+		switch (ratingFilm) {
+		case 1:
+			kostenRating = 5;
+			break;
+		case 2: 
+		case 3:
+			kostenRating = basisPrijs + 1;
+			break;
+		case 4:
+		case 5:
+			kostenRating = basisPrijs +2;
+		default:
+			break;
+		}
+
+			int teBetalen = kostenOuderdom + kostenRating;
+			System.out.println("De film kost " + "€" + teBetalen);
+		input.close();
+	}
+	}
+

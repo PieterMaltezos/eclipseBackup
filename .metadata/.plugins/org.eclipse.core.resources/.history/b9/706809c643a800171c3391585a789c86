@@ -1,0 +1,12 @@
+package be.pxl.h5.opdr4;
+
+public class H5Opdr4G {
+
+	public static void main(String[] args) {
+		char letter = 'a';
+		System.out.println(a);
+		System.out.println(++a);
+
+	}
+
+}

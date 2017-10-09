@@ -1,0 +1,45 @@
+package be.pxl.h5.oef8;
+
+import java.util.Scanner;
+
+public class H5Oef8 {
+
+	public static void main(String[] args) {
+		// input
+		Scanner input = new Scanner(System.in);
+		System.out.println("Voer het behaalde resultaat in van test 1.");
+		int resultaat1 = input.nextInt();
+		System.out.println("Voer het behaalde resultaat in van test 2.");
+		int resultaat2 = input.nextInt();
+		System.out.println("Voer het behaalde resultaat in van test 3.");
+		int resultaat3 = input.nextInt();
+		
+		// percentage berekening
+		int maximum = 60;
+		int totaalResultaat = resultaat1 + resultaat2 + resultaat3;
+		float percentage = totaalResultaat / maximum;
+		
+		
+		if (percentage < 0.6) {
+			System.out.println("Onvoldoende.");
+		} else {
+			
+		if (percentage < 0.7) {
+			System.out.println("Voldoende.");
+			} else {
+		if (percentage < 0.8) {
+			System.out.println("Onderscheiding.");
+				} else {
+		if (percentage < 0.9) {
+			System.out.println("Grote onderscheiding.");
+					} else {
+		if (percentage >= 0.9) {
+			System.out.println("Grootste onderscheiding.");
+		}
+	}
+		input.close();
+}
+			}
+		}
+	}
+}

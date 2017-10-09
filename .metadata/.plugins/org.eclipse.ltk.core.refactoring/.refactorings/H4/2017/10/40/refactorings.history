@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;count&apos; in &apos;be.pxl.h4.oef6.H4Oef6.main(...)&apos; to &apos;getal&apos;&#x0D;&#x0A;- Original project: &apos;H4&apos;&#x0D;&#x0A;- Original element: &apos;be.pxl.h4.oef6.H4Oef6.main(String[]).count&apos;&#x0D;&#x0A;- Renamed element: &apos;count&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;count&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;be.pxl.h4.oef6{H4Oef6.java[H4Oef6~main~\[QString;@count!285!294!289!293!I!0!false" name="getal" references="true" stamp="1507291729752" version="1.0"/>
+</session>

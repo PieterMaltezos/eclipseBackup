@@ -1,0 +1,23 @@
+package be.pxl.h5.exoef1;
+
+import java.util.Scanner;
+
+//author: Pieter Maltezos
+public class H5ExOef1 {
+
+	public static void main(String[] args) {
+		//input graden celsius
+		System.out.println("Voer uw graden in celsius in.");
+		
+		Scanner input = new Scanner(System.in);
+		double celsius = input.nextDouble();
+		
+		double fahrenheit = ( celsius * 1.8 ) + 32;
+				
+		
+		System.out.println(fahrenheit);
+		
+		input.close();
+	}
+
+}

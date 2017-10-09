@@ -1,0 +1,36 @@
+package be.pxl.h5.oef12;
+
+import java.util.Scanner;
+
+public class H5Oef12 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Geef uw percentage t.o.v planeet 1 in.");
+		int percentagePlaneet1 = input.nextInt();
+		System.out.println("Geef uw percentage t.o.v planeet 2 in");
+		int percentagePlaneet2 = input.nextInt();
+		System.out.println("Geef uw percentage t.o.v planeet 3 in");
+		int percentagePlaneet3 = input.nextInt();
+		int gewichtAarde = 50;
+		
+		int planeet1;
+		int planeet2;
+		int planeet3;
+		
+	
+		while (gewichtAarde <= 120) {
+			planeet1 = ((gewichtAarde / 100) * percentagePlaneet1);
+			planeet2 = ((gewichtAarde / 100) * percentagePlaneet2);
+			planeet3 = ((gewichtAarde / 100) * percentagePlaneet3);
+			System.out.println(gewichtAarde + " " + planeet1 + " " + planeet2 + " " + planeet3);
+			gewichtAarde += 5;
+		}
+		
+		
+		
+		
+		input.close();
+	}
+	
+}

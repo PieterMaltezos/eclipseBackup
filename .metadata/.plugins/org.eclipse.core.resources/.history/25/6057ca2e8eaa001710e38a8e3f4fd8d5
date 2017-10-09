@@ -1,0 +1,31 @@
+package be.pxl.h5.oef11;
+
+import java.util.Scanner;
+
+public class H5Oef11 {
+
+	public static void main(String[] args) {
+		//input
+		Scanner input = new Scanner(System.in);
+		System.out.println("Voer het eerste gehele getal in.");
+		int getal1 = input.nextInt();
+		System.out.println("Voer uw tweede gehele getal in.");
+		int getal2 = input.nextInt();
+	    
+		while (getal1 != 0 && getal2 != 0) {
+		int uitkomst = getal1 + getal2;
+		System.out.println("De som is: " + uitkomst + ".");
+		System.out.println("Voer het eerste gehele getal in.");
+		getal1 = input.nextInt();
+		System.out.println("Voer uw tweede gehele getal in.");
+		getal2 = input.nextInt();
+		
+		
+		
+		
+		
+		
+	}
+		input.close();	
+	}
+}

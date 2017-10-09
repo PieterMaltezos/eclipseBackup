@@ -1,0 +1,29 @@
+package be.pxl.h5.opdr11E;
+
+import java.util.Scanner;
+
+public class H5Opdr11E {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Wat is uw burgelijke staat? (1 = ongehuwd, 2 = gehuwd, 3 = weduwe)");
+		int burgerlijkeStaat = input.nextInt();
+		int ongehuwd = 1;
+		int gehuwd = 2;
+		int weduwe = 3;
+		int teBetalen;
+		
+		if (burgerlijkeStaat < 2) {
+			teBetalen = 25;
+		}
+		if (burgerlijkeStaat < 3) {
+			teBetalen = 20;
+		}
+		if (burgerlijkeStaat < 4) {
+			teBetalen = 15;
+		}
+		
+
+	}
+
+}

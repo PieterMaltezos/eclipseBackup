@@ -1,0 +1,40 @@
+package be.pxl.h5.oef12;
+
+import java.util.Scanner;
+
+public class H5Oef12 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Geef uw percentage t.o.v planeet 1 in.");
+		double percentagePlaneet1 = input.nextDouble();
+		System.out.println("Geef uw percentage t.o.v planeet 2 in");
+		double percentagePlaneet2 = input.nextDouble();
+		System.out.println("Geef uw percentage t.o.v planeet 3 in");
+		double percentagePlaneet3 = input.nextDouble();
+		double gewichtAarde = 50;
+		double planeet1;
+		double planeet2;
+		double planeet3;
+
+		System.out.println("AARDE\t\tMAAN\t\tJUPITER\t\tMars");
+		while (gewichtAarde <= 120) {
+			planeet1 = ((gewichtAarde / 100) * percentagePlaneet1);
+			planeet1 = Math.round(planeet1 * 10) / 10;
+			
+			planeet2 = ((gewichtAarde / 100) * percentagePlaneet2);
+			planeet2 = Math.round(planeet2 * 10) / 10;
+			
+			planeet3 = ((gewichtAarde / 100) * percentagePlaneet3);
+			planeet3 = Math.round(planeet3 * 10) / 10;
+			System.out.println(gewichtAarde + " " + planeet1 + " " + planeet2 + " " + planeet3);
+			gewichtAarde += 5;
+		}
+		
+		
+		
+		
+		input.close();
+	}
+	
+}

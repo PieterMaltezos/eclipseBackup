@@ -1,0 +1,27 @@
+package be.pxl.h5.oef4;
+
+import java.util.Scanner;
+
+import javax.print.DocFlavor.INPUT_STREAM;
+
+public class H5Oef4 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Geef uw aantal seconden in.");
+		int aantalSeconden = input.nextInt();
+		int dagen;
+		int uren;
+		int minuten;
+		int seconden;
+		
+		uren = (aantalSeconden % 86400 ) / 3600 ;
+		minuten = ((aantalSeconden % 86400 ) % 3600 ) / 60;
+		seconden = ((aantalSeconden % 86400 ) % 3600 ) % 60;
+		
+		System.out.println("Uw aantal seconden vertaald naar: " + uren + " " + minuten + " " + seconden + ".");
+
+		
+	}
+
+}

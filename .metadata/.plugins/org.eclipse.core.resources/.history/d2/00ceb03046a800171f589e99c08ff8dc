@@ -1,0 +1,25 @@
+package be.pxl.h5.opdr5;
+
+import javax.naming.spi.DirStateFactory.Result;
+
+public class H5Opdr5 {
+
+	public static void main(String[] args) {
+		int a = 2147483645;
+		int b = 2147483642;
+		int c;
+		long result;
+		
+		result = a * b;
+		System.out.println(result);
+		result = ((long) a) * b;
+		System.out.println(result);
+		result = (long) a * b;
+		System.out.println(result);
+		result = (long) (a * b);
+		System.out.println(result);
+		
+
+	}
+
+}

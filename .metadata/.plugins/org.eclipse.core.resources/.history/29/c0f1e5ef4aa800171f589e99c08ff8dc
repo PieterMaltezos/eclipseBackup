@@ -1,0 +1,20 @@
+package be.pxl.h5.opdr7;
+
+public class H5Opdr7 {
+
+	public static void main(String[] args) {
+		boolean geslaagd = true;
+		boolean aanwezig = false;
+		
+		System.out.println("geslaagd: 				" + geslaagd);
+		System.out.println("aanwezig: 				" + aanwezig);
+		System.out.println("geslaagd && aanwezig    : " + (geslaagd && aanwezig));
+		System.out.println("geslaagd || aanwezig    : " + (geslaagd || aanwezig));
+		System.out.println("!geslaagd    			: " + (!geslaagd));
+		System.out.println("!aanwezig    			: " + (!aanwezig));
+	
+		
+
+	}
+
+}

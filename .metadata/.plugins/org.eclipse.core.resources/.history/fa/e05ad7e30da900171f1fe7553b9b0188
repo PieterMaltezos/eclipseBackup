@@ -1,0 +1,20 @@
+package be.pxl.h5.exoef3;
+		//author: Pieter Maltezos
+
+import java.util.Scanner;
+
+public class H5ExOef3 {
+	
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Voer uw lengte van het zwembad in.");
+		int lengte = input.nextInt();
+		System.out.println("Voer uw breedte van het zwembad in.");
+		int breedte = input.nextInt();
+		System.out.println("Voer uw diepte van het zwembad in.");
+		int diepte = input.nextInt();
+}
+	
+}

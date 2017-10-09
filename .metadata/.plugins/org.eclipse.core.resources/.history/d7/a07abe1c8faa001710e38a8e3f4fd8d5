@@ -1,0 +1,22 @@
+package be.pxl.h4.oef6;
+
+import java.util.Scanner;
+
+//author: Pieter Maltezos
+public class H4Oef6 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Geef uw getal in.");
+		int vermenigvuldiger = input.nextInt();
+		int count;
+		
+		for (count = 1; count <=20 ; count++) {
+			int uitkomst = count * vermenigvuldiger;
+			System.out.println(count + " x " + vermenigvuldiger + " = " + uitkomst);
+			
+		}
+		input.close();
+	}
+}

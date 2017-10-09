@@ -1,0 +1,93 @@
+package be.pxl.h5.oef7;
+
+import java.util.Scanner;
+
+public class H5Oef7 {
+
+	public static void main(String[] args) {
+		// input
+		Scanner input = new Scanner(System.in);
+		System.out.println("Voer uw afstand van uw vlucht in KM.");
+		int afstand = input.nextInt();
+		System.out.println("Voer uw klasse in. (1 = toerist, 2 = charter, 3 = zakenreis)");
+		int klasse = input.nextInt();
+		// berekening prijs
+		double korteAfstandVlucht = 0.25;
+		double middellangeAfstandVlucht = 0.20;
+		double langeAfstandVlucht = 0.12;
+		double charter = 0.20;
+		double zakenreis = 0.30;
+		double prijsAfstand;
+		double totalePrijs;
+		
+		// voorwaardelijke output
+		if (afstand < 1001 && klasse == 1) {
+			prijsAfstand = afstand * korteAfstandVlucht;
+			totalePrijs = prijsAfstand;
+			int teBetalen = (int) totalePrijs;
+			System.out.println("Uw ticket kost: €" + teBetalen + ".");
+		} else {
+		if (afstand < 3000 && klasse == 1) {
+				prijsAfstand = afstand * middellangeAfstandVlucht;
+				totalePrijs = prijsAfstand;
+				int teBetalen = (int) totalePrijs;
+				System.out.println("Uw ticket kost: €" + teBetalen + ".");
+			} else {
+		if (afstand > 3000 && klasse == 1) {
+					prijsAfstand = afstand * langeAfstandVlucht;
+					totalePrijs = prijsAfstand;
+					int teBetalen = (int) totalePrijs;
+					System.out.println("Uw ticket kost: €" + teBetalen + ".");
+				} else {
+		if (afstand < 1001 && klasse == 2) {
+						prijsAfstand = afstand * korteAfstandVlucht;
+						totalePrijs = prijsAfstand - (prijsAfstand * charter);
+						int teBetalen = (int) totalePrijs;
+						System.out.println("Uw ticket kost: €" + teBetalen + ".");
+					} else {
+		if (afstand < 3000 && klasse == 2) {
+							prijsAfstand = afstand * middellangeAfstandVlucht;
+							totalePrijs = prijsAfstand - (prijsAfstand * charter);
+							int teBetalen = (int) totalePrijs;
+							System.out.println("Uw ticket kost: €" + teBetalen + ".");
+						} else {
+		if (afstand > 3000 && klasse == 2) {
+								prijsAfstand = afstand * langeAfstandVlucht;
+								totalePrijs = prijsAfstand - (prijsAfstand * charter);
+								int teBetalen = (int) totalePrijs;
+								System.out.println("Uw ticket kost: €" + teBetalen + ".");
+							} else {
+		if (afstand < 1001 && klasse == 3) {
+									prijsAfstand = afstand * korteAfstandVlucht;
+									totalePrijs = prijsAfstand + (prijsAfstand * zakenreis);
+									int teBetalen = (int) totalePrijs;
+									System.out.println("Uw ticket kost: €" + teBetalen + ".");
+								} else {
+		if (afstand < 3000 && klasse == 3) {
+										prijsAfstand = afstand * middellangeAfstandVlucht;
+										totalePrijs = prijsAfstand + (prijsAfstand * zakenreis);
+										int teBetalen = (int) totalePrijs;
+										System.out.println("Uw ticket kost: €" + teBetalen + ".");
+									} else {
+		if (afstand > 3000 && klasse == 3) {
+											prijsAfstand = afstand * langeAfstandVlucht;
+											totalePrijs = prijsAfstand + (prijsAfstand * zakenreis);
+											int teBetalen = (int) totalePrijs;
+											System.out.println("Uw ticket kost: €" + teBetalen + ".");
+										} else {
+
+										}
+
+									}
+								}
+							}
+
+						}
+
+						input.close();
+					}
+				}
+			}
+		}
+	}
+}

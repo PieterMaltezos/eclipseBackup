@@ -1,0 +1,22 @@
+package be.pxl.h4.oef5;
+
+import java.util.Scanner;
+
+//author: Pieter Maltezos
+public class H4Oef5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Geef uw gewicht in.");
+		int gewicht = input.nextInt();
+		int count;
+		int aantalAppels = 0;
+		
+		for (count = 0; count <= 100; count++ ) {
+			System.out.println(aantalAppels + " " + gewicht*aantalAppels );
+			aantalAppels = count;
+		}
+		input.close();
+	}
+	
+}

@@ -1,0 +1,42 @@
+package be.pxl.h5.oef10;
+
+import java.util.Scanner;
+
+public class H5Oef10 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Voer uw bruto jaarwedde in.");
+		double brutoJaarWedde = input.nextDouble();
+		System.out.println("Voer uw beoordelingscode in. (1 = slecht, 2 = voldoende, 3 = goed, 4 = schitterend))");
+		int beoordeling = input.nextInt();
+		double voldoende = 0.18;
+		double goed = 0.25;
+		double uitstekend = 0.33;
+		
+		double eindejaarsPremie;
+		
+		switch (beoordeling) { 
+		case 1:
+			eindejaarsPremie = brutoJaarWedde;
+			System.out.println("Uw eindejaars-premie bedraagt: " + eindejaarsPremie);
+			break;
+		case 2:
+			eindejaarsPremie = (brutoJaarWedde * voldoende);
+			System.out.println("Uw eindejaars-premie bedraagt: " + eindejaarsPremie);
+			break;
+		case 3:
+			eindejaarsPremie = (brutoJaarWedde * goed);
+			System.out.println("Uw eindejaars-premie bedraagt: " + eindejaarsPremie);
+			break;
+		case 4:
+			eindejaarsPremie = (brutoJaarWedde * uitstekend);
+			System.out.println("Uw eindejaars-premie bedraagt: " + eindejaarsPremie);
+			break;
+			default:
+			System.out.println("Ongeldige invoer.");
+
+	}
+		input.close();
+	}
+}

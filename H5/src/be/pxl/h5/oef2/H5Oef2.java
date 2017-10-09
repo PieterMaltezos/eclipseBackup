@@ -1,0 +1,22 @@
+package be.pxl.h5.oef2;
+
+import java.util.Scanner;
+
+//author: Pieter Maltezos
+public class H5Oef2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double eenheidsPrijs = 11.5;
+		double btwPercentage = 0.21; 
+		System.out.println("Geef uw aantal artikelen in.");
+		double aantalArtikelen = input.nextDouble();
+		double prijsExclBtw = eenheidsPrijs * aantalArtikelen;
+		double prijsInclBtw = prijsExclBtw + (prijsExclBtw * btwPercentage);
+		System.out.println("Excl. btw: " + prijsExclBtw);
+		System.out.println("Incl. btw: " + prijsInclBtw);
+		
+		input.close();
+	}
+
+}

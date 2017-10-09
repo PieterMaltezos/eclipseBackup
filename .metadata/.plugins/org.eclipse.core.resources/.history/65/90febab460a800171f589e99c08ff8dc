@@ -1,0 +1,17 @@
+package be.pxl.h5.oef5;
+
+import java.util.Scanner;
+
+public class H5Oef5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Geef uw bedrag in (in €).");
+		int bedrag = input.nextInt();
+		int briefjesTwintig = 20;
+		int restBedrag;
+		
+		System.out.println(bedrag % briefjesTwintig);
+	}
+
+}

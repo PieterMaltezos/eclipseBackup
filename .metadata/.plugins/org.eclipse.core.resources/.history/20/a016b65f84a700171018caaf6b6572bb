@@ -1,0 +1,18 @@
+package be.pxl.h4.oef5;
+		//author: Pieter Maltezos
+public class H4Oef5 {
+
+	public static void main(String[] args) {
+		
+		int count;
+		int aantalAppels = 0;
+		int gewicht = 165;
+		
+		for (count = 0; count < 102; count++ ) {
+			System.out.println(aantalAppels + " " + gewicht*aantalAppels );
+			aantalAppels = count;
+		}
+
+	}
+
+}

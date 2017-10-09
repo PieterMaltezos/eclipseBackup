@@ -1,0 +1,15 @@
+package oef1;
+
+public class H3Oef1 {
+
+	public static void main(String[] args) {
+		int x, z;
+		double y;
+		x = 7;
+		z = 2;
+		y = (double) x / z;
+		System.out.println(y);
+
+	}
+
+}
